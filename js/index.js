@@ -66,6 +66,9 @@ const welcomeText = document.querySelector('.intro p')
 const letsGoHeading = document.querySelector('.text-content h2')
 const letsGoText = document.querySelector('.text-content p')
 
+const adventureHeading = document.querySelector('.text-content:nth-of-type(2) h2')
+const adventureText = document.querySelector('.text-content:nth-of-type(2) p')
+
 welcomeHeading.addEventListener('mouseover', event =>{
     event.stopPropagation();
     welcomeText.style.color = randmColor();
@@ -89,6 +92,10 @@ letsGoHeading.addEventListener('mouseover', event =>{
 
 letsGoHeading.addEventListener('click', event =>{
     letsGoText.style.display = 'block'
+})
+
+adventureHeading.addEventListener('click', event =>{
+    adventureText.style.display = 'block'
 })
 
 
